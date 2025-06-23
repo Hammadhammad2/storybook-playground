@@ -22,6 +22,10 @@ export default {
 			control: 'text',
 			description: 'Emoji or icon text (e.g. 🔍)',
 		},
+		href: {
+			control: 'text',
+			description: 'URL for linkable button',
+		},
 		onClick: { action: 'clicked' },
 	},
 };
@@ -92,5 +96,22 @@ export const WithIcon = {
 		label: 'Search',
 		icon: '🔍',
 		variant: 'secondary',
+	},
+};
+
+// ✅ Linkable Buttons
+export const LinkButton = {
+	args: {
+		label: 'Go to Dashboard',
+		variant: 'primary',
+		href: '/dashboard',
+	},
+};
+
+export const ExternalLinkButton = {
+	args: {
+		label: 'Visit Website',
+		variant: 'secondary',
+		href: 'https://example.com',
 	},
 };
