@@ -16,7 +16,7 @@ export const Button = ({
 	const variants = {
 		primary: 'bg-indigo-500 text-white hover:bg-indigo-600 focus:ring-indigo-400',
 		secondary: 'bg-white border border-gray-300 text-slate-700 hover:bg-gray-100',
-		danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-400',
+		danger: 'bg-red-600 text-white hover:bg-red-600 focus:ring-red-400',
 	};
 
 	return (
