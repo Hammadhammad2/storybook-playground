@@ -1,3 +1,4 @@
+import React from 'react';
 import { Tabs } from './Tabs';
 
 export default {
@@ -88,6 +89,39 @@ export const RoundedTabs = {
 		docs: {
 			description: {
 				story: 'Tabs with a rounded background pill style when active.',
+			},
+		},
+	},
+};
+
+export const WithDisabledTab = {
+	name: 'With a Disabled Tab',
+	args: {
+		tabs: [
+			{
+				label: 'Active Tab',
+				icon: '✅',
+				content: <p>This tab is active and clickable.</p>,
+			},
+			{
+				label: 'Disabled Tab',
+				icon: '⛔',
+				content: <p>You should not be able to activate this tab.</p>,
+				disabled: true,
+			},
+			{
+				label: 'Another Tab',
+				icon: '📦',
+				content: <p>This one works like normal.</p>,
+			},
+		],
+		defaultActive: 0,
+	},
+	parameters: {
+		docs: {
+			description: {
+				story:
+					'Demonstrates a disabled tab that is visually distinct and cannot be clicked.',
 			},
 		},
 	},
